@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GettingStartedView" customModule="ZeZeOZeZe" customModuleProvider="target">
+            <connections>
+                <outlet property="timer_label" destination="sh5-fq-oYX" id="byM-6e-sAV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qPG-ky-Mck">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="392"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מתחילים בעוד" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsB-HG-0DF">
+                    <rect key="frame" x="63" y="152" width="163.5" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh5-fq-oYX">
+                    <rect key="frame" x="132" y="204" width="25" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sh5-fq-oYX" secondAttribute="bottom" constant="8" id="KBD-hT-RBl"/>
+                <constraint firstItem="WsB-HG-0DF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qPG-ky-Mck" secondAttribute="top" constant="8" id="N37-hL-YZb"/>
+                <constraint firstItem="sh5-fq-oYX" firstAttribute="top" secondItem="qPG-ky-Mck" secondAttribute="centerY" constant="8" id="Zh0-BR-UCw"/>
+                <constraint firstItem="sh5-fq-oYX" firstAttribute="centerX" secondItem="qPG-ky-Mck" secondAttribute="centerX" id="dWy-ZY-n1D"/>
+                <constraint firstItem="sh5-fq-oYX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qPG-ky-Mck" secondAttribute="leading" constant="8" id="fQB-9c-cYC"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sh5-fq-oYX" secondAttribute="trailing" constant="8" id="fq8-cm-ScA"/>
+                <constraint firstItem="WsB-HG-0DF" firstAttribute="centerX" secondItem="qPG-ky-Mck" secondAttribute="centerX" id="j5J-14-uOh"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WsB-HG-0DF" secondAttribute="trailing" constant="8" id="scy-Kh-h6T"/>
+                <constraint firstAttribute="centerY" secondItem="WsB-HG-0DF" secondAttribute="bottom" constant="8" id="tcD-p2-maa"/>
+                <constraint firstItem="WsB-HG-0DF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qPG-ky-Mck" secondAttribute="leading" constant="8" id="xBy-Rn-c6f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="6j4-ZJ-urK"/>
+            <point key="canvasLocation" x="238.40579710144928" y="263.16964285714283"/>
+        </view>
+    </objects>
+</document>

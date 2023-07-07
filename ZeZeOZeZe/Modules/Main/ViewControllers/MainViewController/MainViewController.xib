@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="ZeZeOZeZe" customModuleProvider="target">
+            <connections>
+                <outlet property="about_btn" destination="vHn-1f-UAc" id="Kr7-FZ-7IQ"/>
+                <outlet property="best_score_label" destination="Hhe-xd-Qdi" id="8k6-QW-K6n"/>
+                <outlet property="checkbox1" destination="dyq-SD-plF" id="NXO-cc-kjC"/>
+                <outlet property="checkbox2" destination="UZ6-Yh-xdq" id="PEq-YR-C4z"/>
+                <outlet property="checkbox3" destination="Vy4-0n-7B8" id="EUd-BY-UXt"/>
+                <outlet property="checkbox4" destination="Siu-SB-b6V" id="rAx-RA-Chg"/>
+                <outlet property="leaderboard_btn" destination="Bog-v1-O3J" id="zZr-uJ-Q5o"/>
+                <outlet property="play_btn" destination="h55-aw-mnC" id="a9E-Ga-b9W"/>
+                <outlet property="view" destination="fTC-Le-AyC" id="ff2-2b-ueb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fTC-Le-AyC">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="250" image="im_logo" translatesAutoresizingMaskIntoConstraints="NO" id="W48-i8-xCA">
+                    <rect key="frame" x="20.5" y="99.5" width="373" height="249"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="0Mv-bd-NOK"/>
+                        <constraint firstAttribute="width" secondItem="W48-i8-xCA" secondAttribute="height" multiplier="187:125" id="67p-lX-UUL"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="128" image="im_onot" translatesAutoresizingMaskIntoConstraints="NO" id="T3i-60-cOl">
+                    <rect key="frame" x="31" y="387.5" width="352" height="121"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="T3i-60-cOl" secondAttribute="height" multiplier="373:128" id="dMP-Jn-BPA"/>
+                        <constraint firstAttribute="width" constant="352" id="heo-1s-2uW"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaR-xu-82W">
+                    <rect key="frame" x="0.0" y="508.5" width="414" height="353.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="opC-sR-AjW">
+                            <rect key="frame" x="52" y="20" width="310.5" height="104.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="X0I-fm-Dwq">
+                                    <rect key="frame" x="0.0" y="0.0" width="153" height="104"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZ6-Yh-xdq" customClass="CheckboxButton" customModule="ZeZeOZeZe" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="153" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="עונה 4"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkImage" value="ic_checkbox_checked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="clearImage" value="ic_checkbox_clear"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Siu-SB-b6V" customClass="CheckboxButton" customModule="ZeZeOZeZe" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="54" width="153" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="עונות 6-9"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkImage" value="ic_checkbox_checked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="clearImage" value="ic_checkbox_clear"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ABW-a3-bsP">
+                                    <rect key="frame" x="157" y="0.0" width="153.5" height="104.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyq-SD-plF" customClass="CheckboxButton" customModule="ZeZeOZeZe" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="153.5" height="50.5"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="עונות 1-3"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkImage" value="ic_checkbox_checked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="clearImage" value="ic_checkbox_clear"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vy4-0n-7B8" customClass="CheckboxButton" customModule="ZeZeOZeZe" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="54.5" width="153.5" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="עונה 5"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="checkImage" value="ic_checkbox_checked"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="clearImage" value="ic_checkbox_clear"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h55-aw-mnC">
+                            <rect key="frame" x="31" y="140.5" width="352" height="52"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <state key="normal" title="התחל משחק &gt;">
+                                <color key="titleColor" name="play_button_text_color_enabled"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxY-0p-zH6">
+                            <rect key="frame" x="0.0" y="192.5" width="414" height="161"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9P-Mb-lAi">
+                                    <rect key="frame" x="20.5" y="40.5" width="373" height="80.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lOc-DF-Ol8">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="80.5"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AA4-aI-yoV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="121.5" height="80.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhe-xd-Qdi">
+                                                            <rect key="frame" x="46.5" y="30" width="10.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" name="yellow_text_color"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_award" translatesAutoresizingMaskIntoConstraints="NO" id="taF-Ve-Hq4">
+                                                            <rect key="frame" x="65" y="30" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="taF-Ve-Hq4" secondAttribute="height" multiplier="1:1" id="8qz-la-4Fi"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="taF-Ve-Hq4" firstAttribute="leading" secondItem="AA4-aI-yoV" secondAttribute="centerX" constant="4" id="90C-Oz-obl"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="taF-Ve-Hq4" secondAttribute="trailing" constant="8" id="LPC-P9-FCA"/>
+                                                        <constraint firstAttribute="centerX" secondItem="Hhe-xd-Qdi" secondAttribute="trailing" constant="4" id="UJZ-6f-UcV"/>
+                                                        <constraint firstItem="taF-Ve-Hq4" firstAttribute="height" secondItem="AA4-aI-yoV" secondAttribute="height" multiplier="0.25" priority="999" id="Uao-UL-W8M"/>
+                                                        <constraint firstItem="taF-Ve-Hq4" firstAttribute="centerY" secondItem="AA4-aI-yoV" secondAttribute="centerY" id="dGc-gI-gq4"/>
+                                                        <constraint firstItem="Hhe-xd-Qdi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AA4-aI-yoV" secondAttribute="leading" constant="8" id="eh5-sc-lhF"/>
+                                                        <constraint firstItem="Hhe-xd-Qdi" firstAttribute="centerY" secondItem="AA4-aI-yoV" secondAttribute="centerY" id="z33-qP-xfx"/>
+                                                    </constraints>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHn-1f-UAc">
+                                                    <rect key="frame" x="125.5" y="0.0" width="122" height="80.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" title="על המשחק">
+                                                        <color key="titleColor" name="yellow_text_color"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bog-v1-O3J">
+                                                    <rect key="frame" x="251.5" y="0.0" width="121.5" height="80.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" title="טבלת שיאים">
+                                                        <color key="titleColor" name="yellow_text_color"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="vHn-1f-UAc" secondAttribute="bottom" id="2Bf-zi-hb9"/>
+                                                <constraint firstAttribute="bottom" secondItem="Bog-v1-O3J" secondAttribute="bottom" id="p8Q-wB-SCt"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="lOc-DF-Ol8" firstAttribute="top" secondItem="f9P-Mb-lAi" secondAttribute="top" id="00r-b7-L6H"/>
+                                        <constraint firstAttribute="trailing" secondItem="lOc-DF-Ol8" secondAttribute="trailing" id="03U-Dt-XUB"/>
+                                        <constraint firstItem="lOc-DF-Ol8" firstAttribute="leading" secondItem="f9P-Mb-lAi" secondAttribute="leading" id="EbT-KL-aiG"/>
+                                        <constraint firstAttribute="bottom" secondItem="lOc-DF-Ol8" secondAttribute="bottom" id="cdi-Vx-T3n"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="f9P-Mb-lAi" firstAttribute="centerX" secondItem="cxY-0p-zH6" secondAttribute="centerX" id="2do-Wn-MB4"/>
+                                <constraint firstItem="f9P-Mb-lAi" firstAttribute="width" secondItem="cxY-0p-zH6" secondAttribute="width" multiplier="0.9" id="Iw4-d7-HJc"/>
+                                <constraint firstItem="f9P-Mb-lAi" firstAttribute="centerY" secondItem="cxY-0p-zH6" secondAttribute="centerY" id="TB5-UX-jxI"/>
+                                <constraint firstItem="f9P-Mb-lAi" firstAttribute="height" secondItem="cxY-0p-zH6" secondAttribute="height" multiplier="0.5" id="cPE-cG-X7h"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cxY-0p-zH6" secondAttribute="bottom" id="6gh-ZW-2fU"/>
+                        <constraint firstItem="opC-sR-AjW" firstAttribute="width" secondItem="CaR-xu-82W" secondAttribute="width" multiplier="0.75" id="7cO-nG-uRJ"/>
+                        <constraint firstItem="h55-aw-mnC" firstAttribute="centerX" secondItem="CaR-xu-82W" secondAttribute="centerX" id="AMe-fe-0kk"/>
+                        <constraint firstItem="cxY-0p-zH6" firstAttribute="leading" secondItem="CaR-xu-82W" secondAttribute="leading" id="O6f-xM-YlY"/>
+                        <constraint firstItem="h55-aw-mnC" firstAttribute="height" secondItem="opC-sR-AjW" secondAttribute="height" multiplier="0.5" id="PIY-XV-8jj"/>
+                        <constraint firstItem="opC-sR-AjW" firstAttribute="centerX" secondItem="CaR-xu-82W" secondAttribute="centerX" id="Sb8-Tq-fcG"/>
+                        <constraint firstItem="h55-aw-mnC" firstAttribute="width" secondItem="CaR-xu-82W" secondAttribute="width" multiplier="0.85" id="aGi-Yn-7Db"/>
+                        <constraint firstItem="h55-aw-mnC" firstAttribute="top" secondItem="opC-sR-AjW" secondAttribute="bottom" constant="16" id="aQk-2Y-xdi"/>
+                        <constraint firstItem="cxY-0p-zH6" firstAttribute="top" secondItem="h55-aw-mnC" secondAttribute="bottom" id="bFk-Dq-pwl"/>
+                        <constraint firstItem="opC-sR-AjW" firstAttribute="top" secondItem="CaR-xu-82W" secondAttribute="top" constant="20" id="hsv-T6-1Ue"/>
+                        <constraint firstAttribute="trailing" secondItem="cxY-0p-zH6" secondAttribute="trailing" id="tzH-6U-U7e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058819999999" green="0.61568627450000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CaR-xu-82W" firstAttribute="leading" secondItem="Fd9-ls-xxA" secondAttribute="leading" id="1H4-0E-cas"/>
+                <constraint firstItem="W48-i8-xCA" firstAttribute="width" secondItem="fTC-Le-AyC" secondAttribute="width" multiplier="0.9" priority="999" id="2yK-2p-hRh"/>
+                <constraint firstItem="W48-i8-xCA" firstAttribute="centerY" secondItem="fTC-Le-AyC" secondAttribute="centerY" multiplier="1:2" id="3cp-ZQ-mGk"/>
+                <constraint firstItem="Fd9-ls-xxA" firstAttribute="bottom" secondItem="CaR-xu-82W" secondAttribute="bottom" id="3ii-TY-DRB"/>
+                <constraint firstItem="T3i-60-cOl" firstAttribute="centerY" secondItem="fTC-Le-AyC" secondAttribute="centerY" id="BHt-Gn-25F"/>
+                <constraint firstItem="Fd9-ls-xxA" firstAttribute="trailing" secondItem="CaR-xu-82W" secondAttribute="trailing" id="Bae-ae-Vs9"/>
+                <constraint firstItem="T3i-60-cOl" firstAttribute="centerX" secondItem="fTC-Le-AyC" secondAttribute="centerX" id="N7u-N0-7Bm"/>
+                <constraint firstItem="W48-i8-xCA" firstAttribute="centerX" secondItem="fTC-Le-AyC" secondAttribute="centerX" id="i2t-9n-vmq"/>
+                <constraint firstItem="CaR-xu-82W" firstAttribute="top" secondItem="T3i-60-cOl" secondAttribute="bottom" id="opO-1x-Tan"/>
+                <constraint firstItem="T3i-60-cOl" firstAttribute="width" secondItem="fTC-Le-AyC" secondAttribute="width" multiplier="0.85" priority="999" id="rZv-vl-39J"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Fd9-ls-xxA"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_award" width="128" height="128"/>
+        <image name="ic_checkbox_checked" width="32" height="32"/>
+        <image name="ic_checkbox_clear" width="32" height="32"/>
+        <image name="im_logo" width="414" height="353"/>
+        <image name="im_onot" width="456" height="100"/>
+        <namedColor name="play_button_text_color_enabled">
+            <color red="0.67100000381469727" green="0.48600000143051147" blue="0.28200000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yellow_text_color">
+            <color red="1" green="0.83099997043609619" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
